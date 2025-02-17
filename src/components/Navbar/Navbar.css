@@ -1,0 +1,25 @@
+header.navbar {
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+header.navbar .logo img {
+    width: 20%;
+}
+
+header.navbar ul {
+    gap: 50px;
+}
+
+header.navbar ul li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+

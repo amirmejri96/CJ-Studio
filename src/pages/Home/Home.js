@@ -3,7 +3,16 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <section id='accueil' className='home'>
+      <div>
+        <h1>Welcome to <br/> CJ Studio</h1>
+        <p>Where Every Frame Tells a Story</p>
+      </div>
+      <div>
+        <h5>For more informations, contact-us :</h5>
+        <button><a href=''>CONTACT-US</a></button>
+      </div>
+    </section>
   )
 }
 

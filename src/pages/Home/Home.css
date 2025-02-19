@@ -14,9 +14,9 @@ section.home h1 {
 }
 
 section.home p {
-    letter-spacing: 15px;
+    letter-spacing: 13px;
     color: var(--subtitle);
-    text-shadow: 2px 1px 1px rgb(239, 236, 236);
+    text-shadow: 1px 2px 1px rgb(110, 110, 110);
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 3rem;

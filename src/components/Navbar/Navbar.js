@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav>
             <ul className='flex'>
                 <li><a href='#accueil'>Home</a></li>
-                <li><a href='#'>About</a></li>
+                <li><a href='#About'>About</a></li>
                 <li><a href='#'>Works</a></li>
                 <li><a href='#'>Services</a></li>
                 <li><a href='#'>Contact</a></li>

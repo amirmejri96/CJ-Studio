@@ -10,7 +10,7 @@ const Home = () => {
       </div>
       <div>
         <h5>For more informations, contact-us :</h5>
-        <button><a href=''>CONTACT-US</a></button>
+        <button><a href='#Contact'>CONTACT-US</a></button>
       </div>
     </section>
   )

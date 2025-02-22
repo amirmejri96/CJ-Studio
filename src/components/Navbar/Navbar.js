@@ -1,25 +1,48 @@
-import React from 'react'
-import './Navbar.css'
+import { useState } from 'react';
+import './Navbar.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <header className='navbar flex'>
-        <div className='logo'>
-            <img src='../../../assets/logo .jpg' alt='logo' />
+    <header className="navbar flex">
+      <div className="logo">
+        <img src="../../../assets/logo .jpg" alt="logo" />
+      </div>
+
+      <button className="menu" onClick={() => setShowModal(true)}>
+        <FaBars className="icon-menu" />
+      </button>
+
+      <nav>
+        <ul className="flex">
+          <li><a href="#accueil">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      {showModal && (
+        <div className="fixed">
+          <ul className="modal">
+            <li>
+              <button onClick={() => setShowModal(false)} className="icon-close">
+                <FaTimes />
+              </button>
+            </li>
+            <li><a href="#accueil">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-
-        <nav>
-            <ul className='flex'>
-                <li><a href='#accueil'>Home</a></li>
-                <li><a href='#About'>About</a></li>
-                <li><a href='#'>Works</a></li>
-                <li><a href='#'>Services</a></li>
-                <li><a href='#'>Contact</a></li>
-            </ul>
-        </nav>
-
+      )}
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -18,10 +18,10 @@ const Navbar = () => {
       <nav>
         <ul className="flex">
           <li><a href="#accueil">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#About">About</a></li>
           <li><a href="#works">Works</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -34,10 +34,10 @@ const Navbar = () => {
               </button>
             </li>
             <li><a href="#accueil">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#About">About</a></li>
             <li><a href="#works">Works</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </div>
       )}

@@ -1,0 +1,36 @@
+main.project h3 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 3px 1px rgb(83, 82, 82);
+    margin-bottom: 2rem;
+}
+
+main.project .project-content section.left-section {
+    flex-direction: column;
+    gap: 20px;
+}
+
+main.project .project-content section.left-section button {
+    background-color: white;
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+main.project .project-content section.left-section button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+main.project .project-content section.left-section button.active {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 3px solid orange;
+}

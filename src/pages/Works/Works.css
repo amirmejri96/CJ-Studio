@@ -1,3 +1,8 @@
+main.project .project-content {
+    gap: 3rem;
+    align-items: start;
+}
+
 main.project h3 {
     font-size: 2rem;
     color: white;
@@ -34,3 +39,71 @@ main.project .project-content section.left-section button.active {
     padding: 0.8rem 0;
     border: 3px solid orange;
 }
+
+ main.project .project-content section.right-section {
+    /* flex-grow: 1; */
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+} 
+
+main.project .project-content section.right-section article.card {
+    border: 1px solid white;
+    transition: 0.3s;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(118, 114, 114), #a7a1a1);
+}
+
+main.project .project-content section.right-section article.card:hover {
+    border: 3px solid orangered;
+    cursor: pointer;
+    rotate: 1deg;
+    scale: 1;
+}
+
+main.project .project-content section.right-section article.card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main.project .project-content section.right-section article.card .box {
+    padding: 1rem 0;
+}
+
+.card .box .title {
+    text-align: center;
+    color: black;
+    text-shadow: none;
+    font-size: 1.8rem;
+}
+
+
+@media (max-width:600px) {
+    main.project .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main.project .project-content section.left-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main.project h3 {
+        font-size: 1.8rem;
+    }
+
+    main.project .project-content section.left-section button {
+        font-size: 0.9rem;
+        width: 9rem;
+    }
+
+
+}
+
+
+
+
+

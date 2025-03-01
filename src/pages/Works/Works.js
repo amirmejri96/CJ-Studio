@@ -8,18 +8,18 @@ const myProjects = [{ projectTitle : 'RH Brand', category : 'Fashions', imgPath 
   { projectTitle : 'Wedding', category : 'Weddings', imgPath : '../../../assets/Projects/projet wedding 1/projet wedding 1.jpg' },
   { projectTitle : 'Divinity', category : 'Products', imgPath : '../../../assets/Projects/projet produit 2/projet produit 2.jpg' },
   { projectTitle : 'المختلفه', category : 'Fashions', imgPath : '../../../assets/Projects/projet fashion 3/projet fashion 3.jpg' },
-  { projectTitle : 'RH Brand', category : 'fashion', imgPath : 'a' },
-  { projectTitle : 'RH Brand', category : 'fashion', imgPath : 'a' },
-  { projectTitle : 'RH Brand', category : 'fashion', imgPath : 'a' },
-  { projectTitle : 'RH Brand', category : 'fashion', imgPath : 'a' },
-  { projectTitle : 'RH Brand', category : 'fashion', imgPath : 'a' },
-  { projectTitle : 'RH Brand', category : 'fashion', imgPath : 'a' }
+  { projectTitle : 'RH Brand', category : 'fashion', imgPath : '../../../assets/Projects/projet fashion 1/Projet fashion 1.jpg' },
+  { projectTitle : 'RH Brand', category : 'fashion', imgPath : '../../../assets/Projects/projet fashion 1/Projet fashion 1.jpg' },
+  { projectTitle : 'RH Brand', category : 'fashion', imgPath : '../../../assets/Projects/projet fashion 1/Projet fashion 1.jpg' },
+  { projectTitle : 'RH Brand', category : 'fashion', imgPath : '../../../assets/Projects/projet fashion 1/Projet fashion 1.jpg' },
+  { projectTitle : 'RH Brand', category : 'fashion', imgPath : '../../../assets/Projects/projet fashion 1/Projet fashion 1.jpg' },
+  { projectTitle : 'RH Brand', category : 'fashion', imgPath : '../../../assets/Projects/projet fashion 1/Projet fashion 1.jpg' }
 ]
 const Works = () => {
   const [currentActive, setCurrentActive] = useState('all')
   return (
     <main id='Projects' className='project'>
-      <h3>Projects</h3>
+      <h3>Photography Projects</h3>
       <div className='flex project-content'>
         <section className='flex left-section'>
           <button onClick={() => {setCurrentActive('all')}} className={currentActive === 'all' ? 'active' : 'null'}>All Projects</button>

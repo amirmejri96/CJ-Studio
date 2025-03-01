@@ -65,6 +65,7 @@ main.project .project-content section.right-section article.card:hover {
 main.project .project-content section.right-section article.card img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    aspect-ratio: 1.5/2;
 }
 
 main.project .project-content section.right-section article.card .box {

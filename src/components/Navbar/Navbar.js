@@ -19,8 +19,8 @@ const Navbar = () => {
         <ul className="flex">
           <li><a href="#accueil">Home</a></li>
           <li><a href="#About">About</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#Projects">Works</a></li>
+          <li><a href="#Services">Services</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
@@ -35,8 +35,8 @@ const Navbar = () => {
             </li>
             <li><a href="#accueil">Home</a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#Projects">Works</a></li>
+            <li><a href="#Services">Services</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
         </div>

@@ -39,7 +39,7 @@ const Works = () => {
 
   return (
     <main id="Projects" className="project">
-      <h3>Photography Projects</h3>
+      <h3>Some of our photography projects</h3>
       <div className="flex project-content">
         <section className="flex left-section">
           <button onClick={() => {setCurrentActive('all'); 

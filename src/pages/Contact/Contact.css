@@ -1,0 +1,150 @@
+section.contact-us .title {
+
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 3px 1px rgb(83, 82, 82);
+    margin-bottom: 2rem;
+
+}
+
+section.contact-us .sub-title {
+    font-size: 1rem;
+    color: white;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact-us label {
+    color: white;
+}
+
+section.contact-us #email,
+section.contact-us #message {
+    all: unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+section.contact-us #email:focus,
+section.contact-us #message:focus {
+    border: 1px solid white;
+}
+
+section.contact-us #email:hover,
+section.contact-us #message:hover {
+    border: 1px solid white;
+}
+
+section.contact-us #message {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+section.contact-us .submit {
+    background-color: white;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 1.8rem;
+    border: 1px solid rgb(63, 63, 70);
+}
+
+section.contact-us .submit:hover {
+    scale: 0.95;
+    cursor: pointer;
+}
+
+section.contact-us .infos {
+    margin-top: 2rem;
+}
+
+section.contact-us .infos .contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+section.contact-us .infos .contact-links li a {
+    color: white;
+    font-size: 1rem;
+}
+
+section.contact-us .infos .contact-links li a i {
+    margin-right: 0.8rem;
+    font-size: 1.3rem;
+}
+
+
+/* Responsive Design */
+
+
+@media (max-width:600px) {
+    section.contact-us form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    section.contact-us form div.flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    section.contact-us #email,
+    section.contact-us #message {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 0;
+        margin-top: 1rem;
+    }
+
+    section.contact-us .submit {
+        width: 30%;
+        align-self: center;
+    }
+
+    section.contact-us .infos .contact-links {
+        display: flex;
+        justify-content: left;
+        align-items:start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:700px) {
+    section.contact-us .title {
+        font-size: 1.8rem;
+    }
+
+    section.contact-us .sub-title {
+        font-size: 0.8rem;
+    }
+
+    section.contact-us label {
+        font-size: 0.8rem;
+    }
+
+    section.contact-us #email,
+    section.contact-us #message {
+        font-size: 0.8rem;
+    }
+
+    section.contact-us .submit {
+        font-size: 0.8rem;
+    }
+
+    section.contact-us .infos .contact-links li a {
+        font-size: 0.8rem;
+    }
+}

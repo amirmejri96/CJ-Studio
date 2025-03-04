@@ -1,0 +1,116 @@
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bgHeader);
+}
+
+header.navbar .logo img {
+    width: 120px;
+}
+
+/* Style du bouton menu */
+header.navbar .menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+header.navbar .menu .icon-menu {
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.3s;
+}
+
+header.navbar .menu:hover .icon-menu {
+    color: orange;
+}
+
+/* Style du menu desktop */
+header.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+header.navbar ul li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Style du modal */
+header .fixed {
+    position: fixed;
+    inset: 0;
+    z-index: 6;
+    background-color: rgba(40, 40, 48, 0.91);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes mymove {
+    0% {scale: 0;}
+    60% {scale: 1.1;}
+    100% {scale: 1;}
+}
+
+header .fixed .modal {
+    animation: mymove 0.77s 1;
+    width: 75%;
+    max-width: 600px;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+    text-align: start;
+    flex-direction: column;
+}
+
+header .fixed .modal li {
+    border-bottom: 1px solid var(--border);
+    padding: 0.77rem 0;
+}
+
+header .fixed .modal li:first-child {
+    text-align: right;
+    border: none;
+}
+
+header .fixed .modal li a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Style du bouton fermer */
+header .icon-close {
+    font-size: 1.8rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .icon-close:hover {
+    color: crimson;
+    transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    header.navbar nav {
+        display: none;
+    }
+
+    header.navbar .menu {
+        display: block;
+    }
+}

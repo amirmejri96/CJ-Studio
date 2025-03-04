@@ -1,0 +1,85 @@
+section.about .content-about .right-content {
+    text-align: center;
+}
+
+section.about .content-about .right-content img {
+    width: 60%;
+}
+
+
+section.about .content-about {
+    justify-content:space-around;
+    align-items: center;
+    gap: 80px;
+}
+
+section.about .content-about .left-content {
+    text-align: left;
+}
+
+section.about .content-about .left-content h3 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 3px 1px rgb(83, 82, 82);
+    margin-bottom: 2rem;
+}
+
+section.about .content-about .left-content p {
+    font-size: 1rem;
+    color: white;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.about .content-about .left-content .photo-ceo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section.about .content-about .left-content .photo-ceo .ceo {
+    text-align: center;
+}
+
+section.about .content-about .left-content .photo-ceo .ceo img {
+    width: 50%;
+    border: 3px solid orange;
+    border-radius: 50%;
+}
+
+
+
+
+@media (max-width:700px) {
+    section.about .content-about .left-content h3 {
+        font-size: 1.8rem;    
+    }
+
+    section.about .content-about .left-content p {
+        font-size: 0.8rem;
+    }
+
+    section.about .content-about .left-content .photo-ceo .ceo {
+        text-align: start;
+    }
+}
+
+@media (max-width:500px) {
+    section.about .content-about .right-content {
+        display: none;
+    }
+    
+    section.about .content-about .left-content p {
+        line-height: 1.2rem;
+    }
+
+    section.about .content-about .left-content .photo-ceo .ceo p {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,88 @@
+section.home {
+    background-color: rgba(128, 128, 128, 0.159);
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+section.home h1 {
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+section.home p {
+    letter-spacing: 13px;
+    color: var(--subtitle);
+    text-shadow: 2px 2px 1px rgb(86, 84, 84);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+section.home h5 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+section.home button {
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    scale: 90%;
+}
+
+section.home button:hover {
+    scale: 100%;
+}
+
+section.home button a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+@media (max-width:800px) {
+    section.home {
+        padding: 20px;
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    section.home h1 {
+        font-size: 3.5rem;
+    }
+
+    section.home p {
+        letter-spacing: 8px;
+        font-size: 1.1rem;
+    }
+
+    section.home h5 {
+        font-size: 0.8rem;
+    }
+
+    section.home button {
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    section.home button a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:500px) {
+    section.home {
+        border-radius: 10px;
+        padding: 1rem 0;
+        width: 100%;
+        margin: 1rem auto;
+    }
+}

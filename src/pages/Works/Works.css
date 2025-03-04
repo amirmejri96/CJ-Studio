@@ -1,0 +1,187 @@
+main.project .project-content {
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+main.project h3 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 3px 1px rgb(83, 82, 82);
+    margin-bottom: 2rem;
+}
+
+main.project .project-content section.left-section {
+    flex-direction: column;
+    gap: 20px;
+}
+
+main.project .project-content section.left-section button {
+    background-color: white;
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+main.project .project-content section.left-section button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+main.project .project-content section.left-section button.active {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 3px solid orange;
+}
+
+main.project .project-content section.right-section {
+    flex-grow: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+main.project .project-content section.right-section article.card {
+    border: 1px solid white;
+    transition: 0.3s;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(118, 114, 114), #a7a1a1);
+}
+
+main.project .project-content section.right-section article.card:hover {
+    border: 3px solid orangered;
+    cursor: pointer;
+    rotate: 1deg;
+    scale: 1;
+}
+
+main.project .project-content section.right-section article.card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    aspect-ratio: 1.5/2;
+}
+
+main.project .project-content section.right-section article.card .box {
+    padding: 1rem 0;
+}
+
+.card .box .title {
+    text-align: center;
+    color: black;
+    text-shadow: none;
+    font-size: 1.8rem;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 80%;
+    height: auto;
+    max-height: auto;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+
+@media (max-width:600px) {
+    main.project .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main.project .project-content section.left-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main.project h3 {
+        font-size: 1.8rem;
+    }
+
+    main.project .project-content section.left-section button {
+        font-size: 0.9rem;
+        width: 9rem;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .modal-content img {
+        width: 95%;
+    }
+
+    .close-btn {
+        font-size: 10px;
+        padding: 6px 6px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        padding: 3px 5px;
+    }
+}

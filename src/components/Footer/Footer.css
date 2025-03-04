@@ -1,0 +1,41 @@
+footer {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+footer ul {
+    gap: 30px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.7rem;
+    color: var(--subtitle);
+    opacity: 0.3;
+}
+
+
+
+@media (max-width:900px) {
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:500px) {
+    footer ul li a {
+        font-size: 0.6rem;
+    }
+}

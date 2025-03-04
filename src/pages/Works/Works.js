@@ -96,7 +96,13 @@ const Works = () => {
         )
       }
 
-      <h3>Videography Projects</h3>
+<h3>Some of our videography projects</h3>
+<div className="video-grid">
+  <iframe src="https://drive.google.com/file/d/1wwnKqAvWCsZO1cjv8OrdtfcOiPbbS_OW/preview" width="400" height="600" allow="autoplay" title='Video 1'></iframe>
+  <iframe src="https://drive.google.com/file/d/1Gh0UJT0Z95Xo2X8DMsAt7ZK9BzlWId0T/preview" width="400" height="600" allow="autoplay" title='Video 2'></iframe>
+  <iframe src="https://drive.google.com/file/d/1Z_nk5bLBr8aFkLRDBzI-illtFQJ6hNMW/preview" width="400" height="600" allow="autoplay" title='Video 3'></iframe>
+  <iframe src="https://drive.google.com/file/d/1yu_-reSOevnJPQ70Nkljhj74q6abEbu8/preview" width="400" height="600" allow="autoplay" title='Video 4'></iframe>
+</div>
     </main >
   );
 };

@@ -145,7 +145,7 @@ main.project .project-content section.right-section article.card .box {
 
 .video-grid {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -194,5 +194,12 @@ main.project .project-content section.right-section article.card .box {
     .prev-btn,
     .next-btn {
         padding: 3px 5px;
+    }
+}
+
+@media (max-width:800px) {
+    .video-grid iframe {
+        width: auto;
+        height: 500px;
     }
 }

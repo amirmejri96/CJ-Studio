@@ -61,6 +61,11 @@ const Works = () => {
             const newArr = myProjects.filter((item) => { return item.category === 'Weddings' })
             setArr(newArr);
           }} className={currentActive === 'weddings' ? 'active' : 'null'}>Weddings</button>
+          <button onClick={() => {
+            setCurrentActive('others');
+            const newArr = myProjects.filter((item) => { return item.category === 'Others' })
+            setArr(newArr);
+          }} className={currentActive === 'others' ? 'active' : 'null'}>Others</button>
         </section>
         <section className="right-section flex">
           <AnimatePresence>
